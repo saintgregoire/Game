@@ -1,0 +1,733 @@
+/*!!!!!!!!!!!!!!!!!!!!!! WEAPON */
+
+/* ?????????????????????SWORD */
+.sword {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 53%;
+  left: 11%;
+  cursor: url('../img/arrow2786.png'), auto;
+}
+
+.sword:hover{
+  transform: scale(1.2);
+}
+
+.top {
+  border: 24px solid transparent; 
+  border-bottom: 30px solid #c4cfd2;
+  position: relative;
+}
+
+.top::after {
+  content: '';
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 29px;
+  transform: translate(-95%, 3%);
+}
+
+.top::before {
+  content: '';
+  border: 1.5px solid black;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  height: 39px;
+  transform: rotate(-40deg); 
+  z-index: 2;
+}
+
+.top_left_line {
+  position: absolute;
+  top: 14px;
+  left: -31px;
+  background: black;
+  width: 38px;
+  height: 3px;
+  transform: rotate(-52deg);
+  display: block;
+}
+
+.cut_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cut {
+  background: #c4cfd2;
+  width: 25px;
+  height: 100px;
+  border-right: 3px solid black;
+  box-shadow: -4px -7px 5px 4px rgba(255,255,255,0.75) inset;
+  position: relative;
+}
+
+.cut > p{
+  transform: rotate(-90deg);
+  font-size: 10px;
+  white-space: nowrap;
+  position: absolute;
+  top: 44px;
+  left: -15px;
+}
+
+.cut_second {
+  background: #c4cfd2;
+  width: 25px;
+  height: 100px;
+  border-left: 3px solid black;
+  border-right: 2px solid black;
+  box-shadow: 4px -8px 4px 0px rgba(255,255,255,0.75) inset;
+}
+
+.pre_handle{
+  width: 82px;
+  height: 16px;
+  background-color: #f3c960;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  position: relative;
+}
+
+.pre_handle_round_left {
+  width: 25px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #f3c960;
+  border: 3px solid black;
+  position: absolute;
+  top: -5px;
+  left: -6px;
+}
+
+.pre_handle_round_right {
+  width: 25px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #f3c960;
+  border: 3px solid black;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+}
+
+.pre_handle_inner {
+  width: 40%;
+  height: 70%;
+  background-color: #e3648f;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.handle_before{
+  width: 40px;
+  height: 8px;
+  background: #674d46;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.handle {
+  width: 22px;
+  background: white;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.handle_blue_part {
+  background: #67969a;
+}
+
+.handle_part {
+  height: 7px;
+  border-bottom: 3px solid black;
+}
+
+.handle .handle_part:last-child {
+  border: none;
+}
+
+.handle_down {
+  background: #67969a;
+  height: 5px;
+  width: 30px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 8px;
+}
+
+.handle_after{
+  width: 20px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  height: 7px;
+  background: #e3648f;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* ???????????????????? SPEAR */
+
+.spear {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  position: absolute;
+  top: 46%;
+  left: 3%;
+  cursor: url('../img/arrow2786.png'), auto;
+}
+
+.spear:hover{
+  transform: scale(1.2);
+}
+
+.blade{
+  height: 100px;
+  width: 40px;
+  background: #c4cfd2;
+  border: 3px solid white;
+  border-right-style: dashed;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 100%;
+  box-shadow: -15px 5px 5px 0px rgba(255,255,255,0.75) inset;
+}
+
+.spear_stick {
+  height: 200px;
+  width: 10px;
+  background: #503428;
+  border: 3px solid black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/* ?????????????????????????  PISTOL */
+
+.pistol {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 75%;
+  top: 72%;
+  z-index: 3;
+  transform: rotate(-45deg);
+  cursor: url('../img/arrow2786.png'), auto;
+}
+
+.pistol_bullet{
+  position: absolute;
+  top: 31%;
+  right: 15%;
+  height: 15px;
+  width: 15px;
+  background: darkgray;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.pistol:hover{
+  transform: scale(1.2) rotate(-45deg);
+}
+
+.main_pipe {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.main_pipe > div {
+  height: 30px;
+  background: #dec44f;
+  border: 3px solid black;
+  box-shadow: 2px 4px 5px 0px rgba(255,255,255,0.75) inset;
+}
+.part_rounded {
+  width: 13px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.part_rounded ~ div {
+  border-left: none;
+}
+
+.part_ultrathin {
+  width: 5px;
+}
+
+.pistol_drum {
+  display: flex;
+  flex-direction: column;
+}
+
+.pistol_drum > div {
+  flex: 1 1 30%;
+  width: 17px;
+}
+
+.drum_one, .drum_two {
+  border-bottom: 3px dashed black;
+}
+
+.part_medium {
+  width: 15px;
+}
+
+.part_thin {
+  width: 7px;
+}
+
+div.pistol_hole {
+  width: 10px;
+  height: 34px;
+}
+
+.pistol_I {
+  height: 9px;
+  width: 1px;
+  border: 2px solid black;
+  position: absolute;
+  top: -17%;
+  right: 42%;
+}
+
+.pistol_handle {
+  position: absolute;
+  bottom: -35%;
+  left: 10%;
+  z-index: -1;
+}
+
+.handle_first_line {
+  width: 101px;
+  height: 15px;
+  border: 3px solid black;
+  border-bottom-right-radius: 15px;
+  background: #503428;
+  border-top-left-radius: 6px;
+}
+
+.handle_second_line {
+  background: #503428;
+  width: 68px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  border: 3px solid black;
+  border-top: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 6px;
+}
+
+.handle_line {
+  width: 20px;
+  height: 26px;
+  background: #dec44f;
+  position: absolute;
+  top: 2%;
+  left: 25%;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.handle_line_dott {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.pistol_prehandle {
+  width: 31px;
+  height: 31px;
+  background-color: #c4cfd2;
+  border: 2px solid black;
+  position: absolute;
+  top: 45%;
+  left: 39%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.pistol_pin {
+  width: 13px;
+  height: 30px;
+  background: #503428;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -78%;
+  right: 7%;
+  border: 3px solid black;
+  border-bottom: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.pistol_pin > div {
+  flex: 1 1 30%;
+  border-bottom: 3px solid black;
+}
+
+.pistol_hook {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-left: 4px solid #c4cfd2;
+  position: absolute;
+  bottom: -16%;
+  right: 17%;
+  z-index: -1;
+}
+/*??????????????????????????????????????????? GUN */
+.gun {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  z-index: 3;
+  transform: rotate(-90deg);
+  cursor: url('../img/arrow2786.png'), auto;
+}
+
+.gun_bullet{
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  z-index: -1;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.gun:hover{
+  transform: rotate(-90deg) scale(1.2);
+}
+
+.pipes > div{
+  border: 3px solid black;
+  background: #c4cfd2;
+  border-left: none;
+}
+
+.pipe_long{
+  width: 200px;
+  height: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+div.pipe_short{
+  width: 180px;
+  height: 12px;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+}
+
+.gun_block{
+  width: 70px;
+  height: 33px;
+  border: 3px solid black;
+  background: #674d46;
+  border-bottom-right-radius: 4px;
+  position: relative;
+}
+
+.bullet_hole{
+  width: 50%;
+  border: 2px solid black;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  background: red;
+}
+
+.gun_block::before{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.gun_block::after{
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.bullet_pin {
+  width: 7px;
+  height: 100%;
+  background: gold;
+  border-right: 2px solid black;
+}
+
+.gun_shot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px double black;
+  position: absolute;
+  z-index: -1;
+  top: 12px;
+  left: -5px;
+}
+
+.gun_hook{
+  border: 2px solid black;
+  width: 11px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 14px;
+  left: 3px;
+}
+
+.gun_handle{
+  position: relative;
+}
+
+.handle_first_part{
+  height: 33px;
+  width: 27px;
+  background: #503428;
+  border-color: black;
+  border-width: 3px 0px;
+  border-style: solid;
+  border-top-left-radius: 15px;
+}
+
+.handle_second_part {
+  height: 37px;
+  width: 27px;
+  background: #503428;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px 0;
+  position: absolute;
+  bottom: -11px;
+  right: 25px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.handle_third_part {
+  height: 46px;
+  width: 77px;
+  background: #503428;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px 0 3px 3px;
+  position: absolute;
+  bottom: -26px;
+  right: 49px;
+  border-bottom-right-radius: 23px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.bullets_place {
+  width: 10%;
+  height: 100%;
+  background: goldenrod;
+  border-left: 2px dashed black;
+  border-right: 2px dashed black;
+}
+
+.spear_strike{
+  animation: spear_animation 1.5s ease 2 alternate;
+}
+
+.sword_strike{
+  animation: sword_animation 1.5s ease infinite alternate;
+}
+
+.bullet_shot{
+  animation: bullet_shot .5s linear;
+}
+
+.pistol_shot{
+  animation: pistol_shot .3s linear;
+}
+
+.gun_bullet_shot {
+  animation: gun_bullet_shot .3s linear;
+}
+
+.pistol_ready {
+  animation: pistol_position 1s forwards;
+}
+
+.gun_ready{
+  animation: gun_position 1s forwards;
+}
+
+.spear_ready {
+  animation: spear_position 1s forwards;
+}
+
+.sword_ready {
+  animation: sword_position 1s forwards;
+}
+
+.sword_hold {
+  top: 0;
+  left: 33%;
+  transform: rotate(32deg);
+}
+
+.spear_hold {
+  top: 0;
+  left: 33%;
+  transform: rotate(32deg);
+}
+
+.spear_hold:hover{
+  transform: rotate(32deg);
+}
+
+.pistol_hold {
+  top:3%;
+  transform: rotate(32deg);
+  left: 29%;
+}
+
+.pistol_hold:hover {
+  transform: rotate(32deg);
+}
+
+@keyframes sword_position {
+  100%{
+    top: 0;
+    left: 33%;
+    transform: rotate(32deg);
+  }
+}
+
+@keyframes spear_position {
+  100%{
+    top: 0;
+    left: 33%;
+    transform: rotate(32deg);
+  }
+}
+
+@keyframes gun_position {
+  100%{
+    top: 18%;
+    left: 15%;
+    transform: rotate(9deg);
+  }
+}
+
+@keyframes pistol_position {
+  100%{
+    top:3%;
+    transform: rotate(32deg);
+    left: 29%;
+  }
+}
+
+
+@keyframes weapon_appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spear_animation{
+  0%{
+    top: 0;
+    left: 33%;
+    transform: rotate(32deg);
+  }
+  50%{
+    top: 0;
+    left: 33%;
+    transform: rotate(-17deg);
+  }
+  100%{
+    top: 0;
+    left: 37%;
+    transform: rotate(79deg);
+  }
+}
+
+@keyframes sword_animation {
+  0%{
+    transform: rotate(32deg);
+    left:33%;
+  }
+  50%{
+    transform: rotate(-29deg);
+    left:33%;
+  }
+  100%{
+    transform: rotate(120deg);
+    left: 41%;
+  }
+}
+
+@keyframes bullet_shot {
+  100%{
+    right: -57%;
+  }
+}
+
+@keyframes pistol_shot {
+  50%{
+    left: 28%;
+  }
+  100%{
+    left: 29%;
+  }
+}
+
+@keyframes gun_bullet_shot {
+  100%{
+    right: -31%;
+  }
+}

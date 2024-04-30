@@ -1,0 +1,116 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!! TABLE */
+
+.table {
+  width: 600px;
+  height: 200px;
+  background: #503428;
+  position: absolute;
+  bottom: -224px;
+  right: 50%;
+  transform: translateX(50%);
+  border-radius: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: bold;
+  border: 3px dashed gold;
+}
+
+.table > p {
+  font-size: 30px;
+  color:antiquewhite;
+}
+
+.yes {
+  padding: 1em 2rem;
+  margin: 0 20px;
+  border-radius: 8px;
+  cursor: url('../img/arrow2786.png'), auto;
+  border: 3px solid black;
+  background: greenyellow;
+  animation: scale .6s linear infinite alternate;
+}
+
+@keyframes scale {
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+.stone {
+  position: absolute;
+  top: 73%;
+  left: 2%;
+}
+
+.table i {
+  font-size: 21px;
+}
+
+.stone i {
+  color: darkgrey;
+}
+
+.scissor {
+  position: absolute;
+  top: 71%;
+  left: 12%;
+  transform: rotate(-45deg);
+}
+
+.scissor i {
+  color:lightgray;
+}
+
+.paper {
+  position: absolute;
+  top: 79%;
+  left: 8%;
+}
+
+.card_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.card {
+  height: 100px;
+  background: white;
+  flex: 0 1 10%;
+  border: 3px dotted darkred;
+  border-radius: 5px;
+  cursor: url('../img/arrow2786.png'), auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card > p{
+  font-size: 12px;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.figure i{
+  font-size: 35px;
+  -webkit-text-stroke: 1px black;
+}
+
+.fig_scissors i{
+  color: lightgrey;
+}
+
+.fig_stone i {
+  color: darkgrey;
+}
+
+.fig_paper i {
+  color: whitesmoke;
+}

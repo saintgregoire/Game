@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rock-paper-scissors with Ork." />
+    <link
+      rel="shortcut icon"
+      href="img/orks-icon-warhammer-40k-ork-logo-115629934052jc7z6usmz.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="img/orks-icon-warhammer-40k-ork-logo-115629934052jc7z6usmz.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock-paper-scissors with Ork</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock-paper-scissors with Ork</h1>
+    </header>
+    <div class="container">
+      <main>
+        <div class="sword hidden">
+          <div class="top">
+            <span class="top_left_line"></span>
+          </div>
+          <div class="cut_box">
+            <div class="cut_second"></div>
+            <div class="cut">
+              <p>Vini Vidi Vici</p>
+            </div>
+          </div>
+          <div class="pre_handle">
+            <span class="pre_handle_round_left"></span>
+            <span class="pre_handle_round_right"></span>
+            <span class="pre_handle_inner"></span>
+          </div>
+          <div class="handle_before"></div>
+          <div class="handle">
+            <div class="handle_blue_part handle_part"></div>
+            <div class="handle_part"></div>
+            <div class="handle_part"></div>
+            <div class="handle_part"></div>
+            <div class="handle_part"></div>
+            <div class="handle_blue_part handle_part"></div>
+          </div>
+          <div class="handle_down"></div>
+          <div class="handle_after"></div>
+        </div>
+
+        <div class="spear hidden">
+          <div class="blade"></div>
+          <div class="spear_stick"></div>
+        </div>
+
+        <div class="pistol hidden">
+          <div class="pistol_I"></div>
+          <div class="pistol_bullet"></div>
+
+          <div class="main_pipe">
+            <div class="part_rounded"></div>
+            <div class="part_ultrathin"></div>
+            <div class="pistol_drum">
+              <div class="drum_one"></div>
+              <div class="drum_two"></div>
+              <div class="drum_three"></div>
+            </div>
+            <div class="part_medium"></div>
+            <div class="part_thin"></div>
+            <div class="part_medium"></div>
+            <div class="pistol_hole"></div>
+          </div>
+
+          <div class="pistol_prehandle"></div>
+
+          <div class="pistol_handle">
+            <div class="handle_first_line"></div>
+            <div class="handle_second_line"></div>
+            <div class="handle_line">
+              <div class="handle_line_dott"></div>
+              <div class="handle_line_dott"></div>
+            </div>
+          </div>
+
+          <div class="pistol_pin">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div class="pistol_hook"></div>
+        </div>
+
+        <div class="gun hidden">
+          <div class="gun_bullet"></div>
+          <div class="pipes">
+            <div class="pipe_long"></div>
+            <div class="pipe_short"></div>
+          </div>
+          <div class="gun_block">
+            <div class="bullet_hole">
+              <div class="bullet_pin"></div>
+            </div>
+          </div>
+          <div class="gun_handle">
+            <div class="handle_first_part"></div>
+            <div class="handle_second_part"></div>
+            <div class="handle_third_part">
+              <div class="bullets_place"></div>
+            </div>
+            <div class="gun_shot">
+              <div class="gun_hook"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ork">
+          <div class="head">
+            <div class="head_top">
+              <div class="left_brov"></div>
+              <div class="right_brov"></div>
+              <div class="hair"></div>
+              <div class="hair"></div>
+              <div class="hair"></div>
+              <div class="hair"></div>
+            </div>
+
+            <div class="head_main">
+              <div class="brov_inner_left"></div>
+              <div class="brov_inner_right"></div>
+              <div class="brov_underline_left">
+                <div class="eye">
+                  <div class="eye_dott"></div>
+                </div>
+                <p class="eye_x hidden">x</p>
+              </div>
+              <div class="brov_underline_right">
+                <div class="eye">
+                  <div class="eye_dott"></div>
+                </div>
+                <p class="eye_x hidden">x</p>
+              </div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+              <div class="mouth_down">
+                <div class="tooth"></div>
+                <div class="tooth tooth_right"></div>
+              </div>
+              <div class="chin"></div>
+              <div class="ear_left">
+                <div class="ear_inner"></div>
+              </div>
+              <div class="ear_right">
+                <div class="ear_inner ear_inner_right"></div>
+              </div>
+            </div>
+            <div class="ork_neck"></div>
+          </div>
+
+          <div class="ork_body">
+            <div class="ork_breast">
+              <div class="breast_left"></div>
+              <div class="breast_right"></div>
+            </div>
+            <div class="belt">
+              <div class="dotted"></div>
+            </div>
+            <div class="belt_second">
+              <div class="dotted"></div>
+            </div>
+            <div class="big_belt">
+              <div class="belt_round"></div>
+              <div class="belt_round"></div>
+              <div class="belt_central">
+                <div class="stopper"></div>
+              </div>
+              <div class="belt_round"></div>
+              <div class="belt_round"></div>
+            </div>
+            <div class="dott_body"></div>
+            <div class="shoulder_left"></div>
+            <div class="shoulder_right"></div>
+            <div class="hand_left">
+              <div class="left_fist">
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+                <div class="finger"></div>
+              </div>
+            </div>
+            <div class="hand_right">
+              <div class="hand_right_second_part">
+                <div class="right_fist">
+                  <div class="finger"></div>
+                  <div class="finger"></div>
+                  <div class="finger"></div>
+                  <div class="finger"></div>
+                  <div class="stick">
+                    <div class="stick_main">
+                      <div class="nail nail_one"></div>
+                      <div class="nail nail_two"></div>
+                      <div class="nail nail_three"></div>
+                      <div class="nail nail_four"></div>
+                      <div class="nail nail_five"></div>
+                      <div class="stick_handle">
+                        <div class="stick_handle_line"></div>
+                        <div class="stick_handle_line"></div>
+                        <div class="stick_handle_line"></div>
+                        <div class="stick_handle_line"></div>
+                        <div class="stick_handle_line"></div>
+                        <div class="stick_handle_line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table">
+              <p class="table_text">Are you ready to play?</p>
+              <p class="stone"><i class="fa-solid fa-mound"></i></p>
+              <p class="scissor"><i class="fa-solid fa-scissors"></i></p>
+              <p class="paper"><i class="fa-solid fa-file"></i></p>
+              <button class="yes">YES</button>
+
+              <div class="card_box">
+                <div id="stone_card" class="card hidden">
+                  <p class="figure fig_stone">
+                    <i class="fa-solid fa-mound"></i>
+                  </p>
+                  <p>stone</p>
+                </div>
+                <div id="scissors_card" class="card hidden">
+                  <p class="figure fig_scissors">
+                    <i class="fa-solid fa-scissors"></i>
+                  </p>
+                  <p>scissors</p>
+                </div>
+                <div id="paper_card" class="card hidden">
+                  <p class="figure fig_paper">
+                    <i class="fa-solid fa-file"></i>
+                  </p>
+                  <p>paper</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field orks_range_field hidden">
+          <label class="ork_label" for="orks_health"
+            >Ork health: <span></span
+          ></label>
+          <input
+            class="health"
+            id="orks_health"
+            type="range"
+            name="OrkRange"
+            min="0"
+            max="100"
+            value="100"
+          />
+          <div class="range_cover"></div>
+        </div>
+        <div class="field users_range_field hidden">
+          <label class="user_label" for="user_health"
+            >Your health: <span></span
+          ></label>
+          <input
+            class="health"
+            id="user_health"
+            type="range"
+            name="UserRange"
+            min="0"
+            max="100"
+            value="100"
+          />
+          <div class="range_cover"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <aside>
+        <p class="game_creator">Created by: Voznichka Maksym</p>
+        <p class="contact">
+          <a
+            href="https://www.linkedin.com/in/maksym-voznichka/"
+            target="_blank"
+            >Contact me: <i class="fa-brands fa-linkedin"></i
+          ></a>
+        </p>
+      </aside>
+    </footer>
+
+    <div class="crash_glass hidden"></div>
+
+    <div class="game_over_covering hidden">
+      <div class="new_game">
+        <p class="question">Do you want to play again?</p>
+        <div class="button_box">
+          <button class="yes_second">YES</button>
+          <button class="no">NO</button>
+        </div>
+        <p class="contact">
+          <a
+            href="https://www.linkedin.com/in/maksym-voznichka/"
+            target="_blank"
+            >Contact me: <i class="fa-brands fa-linkedin"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

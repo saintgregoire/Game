@@ -1,0 +1,660 @@
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!! ORK */
+
+.ork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* ????????????????????? HEAD */
+
+.head {
+  position:relative;
+}
+
+.head_top {
+  width: 90px;
+  height: 40px;
+  background: #8e9e45;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+
+.hair{
+  height: 30px;
+  width: 1px;
+  background: burlywood;
+}
+
+.left_brov {
+  width: 45px;
+  height: 20px;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  background: #8e9e45;
+  border-radius: 8px;
+  transform: rotate(15deg);
+  position: absolute;
+  top: 55%;
+  left: -12%;
+}
+
+.right_brov {
+  width: 45px;
+  height: 20px;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  background: #8e9e45;
+  border-radius: 8px;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 55%;
+  right: -12%;
+}
+
+.head_main {
+  width: 90px;
+  height: 80px;
+  background: #8e9e45;
+  border-top: 1px solid transparent;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: relative;
+}
+
+.brov_inner_left {
+  width: 39px;
+  height: 8px;
+  background: black;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius:8px;
+  transform: rotate(10deg);
+  position: absolute;
+  top: -8px;
+  left: -7px;
+}
+
+.brov_inner_right {
+  width: 39px;
+  height: 8px;
+  background: black;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius:8px;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: -8px;
+  right: -7px;
+}
+
+.brov_underline_left{
+  width: 15px;
+  height: 17px;
+  background: transparent;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 80%;
+  margin-left: 16px;
+  float: left;
+}
+
+.brov_underline_right{
+  width: 15px;
+  height: 17px;
+  background: transparent;
+  border-left: 2px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 80%;
+  margin-right: 16px;
+  float: right;
+}
+
+.eye {
+  width: 13px;
+  height: 13px;
+  background: yellow;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: eye 2s linear infinite alternate;
+}
+
+.eye_x{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  transform: rotate(90deg);
+}
+
+.eye_dott {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+}
+
+@keyframes eye {
+  0%{
+    justify-content: start;
+  }
+
+  50%{
+    justify-content: center;
+  }
+
+  100%{
+    justify-content: end;
+  }
+}
+
+.nose {
+  width: 30%;
+  height: 13px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 20px auto 0;
+  border-radius: 6px;
+}
+
+.mouth {
+  width: 50%;
+  height: 7px;
+  border-bottom: 3px solid black;
+  margin: 10px auto 0;
+  border-radius: 90%;
+  box-shadow: 0px 5px 3px 0px rgba(185,40,40,0.75);
+}
+
+.mouth_down {
+  width: 40%;
+  height: 7px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  border-radius: 90%;
+  position: relative;
+}
+
+.tooth {
+  width: 0px;
+  height: 0px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 8px solid white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.tooth_right {
+  left: 77%;
+}
+
+/* ??????????????????????/ BODY */
+
+.chin {
+  width: 40%;
+  height: 10px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 4px auto 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ear_left {
+  width: 18px;
+  height: 15px;
+  border-left: 3px solid black;
+  border-radius: 70%;
+  background: #8e9e45;
+  position: absolute;
+  top: 0;
+  left: -11%;
+}
+
+.ear_right {
+  width: 18px;
+  height: 15px;
+  border-right: 3px solid black;
+  border-radius: 70%;
+  background: #8e9e45;
+  position: absolute;
+  top: 0;
+  right: -11%;
+}
+
+.ear_inner {
+  width: 10px;
+  height: 7px;
+  border-right: 2px solid black;
+  border-radius: 70%;
+}
+
+.ear_inner_right {
+  transform: rotate(180deg);
+}
+
+.ork_neck {
+  width: 70px;
+  height: 20px;
+  background-color: #8e9e45;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.ork_body {
+  width:200px;
+  height: 180px;
+  margin-top: 5px;
+  background-color: #8e9e45;
+  border: 3px solid black;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  position: relative;
+}
+
+.ork_breast{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+  gap: 20px;
+}
+
+.breast_left {
+  flex: 0 1 30%;
+  height: 15px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 8px;
+}
+
+.breast_right {
+  flex: 0 1 30%;
+  height: 15px;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 8px;
+}
+
+.dott_body {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.belt {
+  width: 115%;
+  height:20px;
+  background: #664204;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+}
+
+.belt_second {
+  width: 100%;
+  height:20px;
+  background: #664204;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-135deg);
+  display: flex;
+  align-items: center;
+}
+
+.dotted {
+  width: 100%;
+  height: 2px;
+  border: 2px dotted gold;
+}
+
+.big_belt {
+  height: 50px;
+  background: #674d46;
+  border: 3px dashed black;
+  position: absolute;
+  bottom: -25px;
+  left: -2px;
+  right: -3px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.belt_round {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #919097;
+  border: 2px solid black
+}
+
+.belt_central {
+  width: 40px;
+  height: 30px;
+  border: 5px solid #919097;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.stopper {
+  width: 40%;
+  height: 3px;
+  background: gold;
+  border-left: 3px solid black;
+}
+
+.shoulder_right {
+  height: 60px;
+  width: 70px;
+  border-radius: 46% 54% 100% 0% / 35% 42% 58% 65% ;
+  border: 3px solid black;
+  position: absolute;
+  right: -24px;
+  top: -10px;
+  background: #3c3c3c;
+  z-index: 2;
+  box-shadow: 10px 10px 17px -7px rgba(221,192,192,0.75) inset;
+}
+
+.shoulder_left {
+  height: 60px;
+  width: 70px;
+  border-radius: 54% 46% 0% 100% / 42% 35% 65% 58% ;
+  border: 3px solid black;
+  position: absolute;
+  left: -24px;
+  top: -10px;
+  background: #3c3c3c;
+  z-index: 2;
+  box-shadow: -10px 9px 17px -7px rgba(221,192,192,0.75) inset;
+}
+
+.hand_left {
+  width: 45px;
+  height: 186px;
+  border: 3px solid black;
+  background: #8e9e45;
+  position: absolute;
+  top: 6px;
+  left: -19px;
+  z-index: 1;
+}
+
+.left_fist {
+  height: 60px;
+  width: 60px;
+  border: 3px solid black;
+  background: #8e9e45;
+  position: absolute;
+  bottom: -14px;
+  right: -10px;
+  border-radius: 40%;
+}
+
+.left_fist > .finger {
+  width: 14px;
+  height: 22px;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  position: absolute;
+  background: #8e9e45;
+}
+
+.left_fist .finger:first-child {
+  bottom: -10px;
+  left: -1px;
+}
+
+.left_fist .finger:nth-child(2) {
+  bottom: -10px;
+  left: 14px;
+}
+
+.left_fist .finger:nth-child(3) {
+  bottom: -10px;
+  left: 29px;
+}
+
+.left_fist .finger:last-child {
+  bottom: -1px;
+  left: 46px;
+  height: 18px;
+  transform: rotate(-16deg);
+}
+
+.hand_right {
+  width: 45px;
+  height: 125px;
+  border: 3px solid black;
+  background: #8e9e45;
+  position: absolute;
+  top: 6px;
+  right: -19px;
+  z-index: 1;
+  border-bottom-left-radius: 30px;
+}
+
+.hand_right_second_part {
+  width: 90px;
+  height: 45px;
+  background: #8e9e45;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  position: absolute;
+  bottom: -3px;
+  right: -83px;
+  z-index: 2;
+}
+
+.right_fist {
+  height: 60px;
+  width: 60px;
+  border: 3px solid black;
+  background: #8e9e45;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 40%;
+}
+
+.right_fist > .finger {
+  width: 30px;
+  height: 14px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  position: absolute;
+  background: #8e9e45;
+  z-index: 3;
+}
+
+.right_fist .finger:first-child {
+  top: 10px;
+  right: 6px;
+}
+
+.right_fist .finger:nth-child(2) {
+  top: 25px;
+  right: 6px;
+}
+
+.right_fist .finger:nth-child(3) {
+  top: 40px;
+  right: 10px;
+  width: 21px;
+}
+
+.right_fist .finger:nth-child(4) {
+  transform: rotate(180deg);
+  top: 8px;
+  left: 4px;
+  width: 13px;
+}
+
+/*?????????????????????? ORKS STICK */
+
+.stick {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  z-index: 2;
+}
+
+.stick_main {
+  width: 50px;
+  height: 200px;
+  border-radius: 48% 52% 55% 45% / 14% 14% 86% 86% ;
+  background: #3c3c3c;
+  border: 2px solid lightslategray;
+  margin-bottom: 50px;
+  position: relative;
+  box-shadow: 0px 19px 9px 10px rgba(88,78,104,0.75) inset;
+}
+
+.stick_handle {
+  width: 17px;
+  height: 80px;
+  background: #3c3c3c;
+  border-radius: 6px;
+  position: absolute;
+  bottom: -58px;
+  left: 50%;
+  transform: translateX(-57%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.stick_handle_line {
+  height: 1px;
+  background: #c4cfd2;
+  transform: rotate(-45deg);
+}
+
+.stick_handle > .stick_handle_line:first-child{
+  transform: none;
+}
+
+.nail {
+  width: 3px;
+  height: 30px;
+  background: grey;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  border-top-right-radius: 30px;
+  position: absolute;
+}
+
+.nail_one {
+  top: -20px;
+  left: 50%;
+}
+
+.nail_two {
+  top: -10px;
+  left: 10%;
+  transform: rotate(-30deg);
+}
+
+.nail_three {
+  top: -10px;
+  right: 10%;
+  transform: rotate(30deg);
+}
+
+.nail_four {
+  top: 9px;
+  right: -9%;
+  transform: rotate(30deg);
+}
+
+.nail_five {
+  top: 9px;
+  left: -9%;
+  transform: rotate(-30deg);
+}
+
+.ork_punch{
+  animation: ork_hand_punch .5s ease 2 alternate;
+}
+
+.head_move{
+  animation: head_move .4s ease .5s 2 alternate ;
+}
+
+.ork_disappear{
+  animation: ork_disappear 5s ease 1s forwards;
+}
+
+@keyframes ork_hand_punch {
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(84deg);
+  }
+}
+
+@keyframes head_move {
+  100%{
+    transform: translateY(6px);
+  }
+}
+
+@keyframes eye_animation {
+  100%{
+    background: red;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes ork_disappear {
+  100%{
+    opacity: 0;
+  }
+}
