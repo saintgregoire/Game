@@ -17,10 +17,7 @@ function chooseWeapon() {
   weapons.forEach((item) => {
     item.classList.remove("hidden");
     item.classList.add("appearance");
-  });
-
-  weapons.forEach((item) => {
-    item.Listener("click", (event) => {
+    item.addEventListener("click", (event) => {
       let choosedWeapon = event.target;
       item.style.cursor = "url(../img/cursor.png), auto";
       // ????????????????????????????????????????????? REMOVE EYE ANIMATION

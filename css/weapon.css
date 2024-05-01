@@ -615,6 +615,10 @@ div.pipe_short{
   transform: rotate(32deg);
 }
 
+.sword_hold:hover {
+  transform: rotate(32deg);
+}
+
 .spear_hold {
   top: 0;
   left: 33%;
