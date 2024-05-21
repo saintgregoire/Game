@@ -13,7 +13,7 @@ A beloved game of rock-paper-scissors takes on a creative twist. In this version
 
 * [Philosophy](#philosophy)
 * [License](#license)
-* [Technical stack](#technical-stack)
+* [Tools](#tools)
 * [Installation](#installation)
 
 ## Philosophy
@@ -26,7 +26,7 @@ I tried to adhere to two main principles:
 
 [GPL : https://en.wikipedia.org/wiki/GNU_General_Public_License](https://en.wikipedia.org/wiki/GNU_General_Public_License)
 
-## Technical stack
+## Tools
 
 Frontend 
 
