@@ -34,6 +34,10 @@ Frontend
 * **СSS** : setting styles and animations. The project was drawn entirely using CSS.
 * **HTML** : Creating a Project Structure
 
+## Recommendations for improvement
+
+* In some places it would be more correct to use **switch**
+
 ## Installation
 
 To work with the project you will need **Git**
